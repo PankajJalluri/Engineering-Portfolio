@@ -14,7 +14,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://pankajjalluri.github.io/Engineering-Portfolio/">
   
-  <title>Pankaj Jalluri - Engineering Portfolio | Projects & Experience</title>
+  <title>Pankaj Jalluri - Engineering Portfolio</title>
   
   <link href="https://fonts.googleapis.com/css2?family=Akshar:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
@@ -34,59 +34,25 @@
       min-height: 100vh;
     }
     
-    .container {
-      max-width: 100%;
-      margin: 0;
-      padding: 40px 20px;
-      background-color: #fff;
-    }
-    
-    h1 {
-      color: #000;
-      margin-bottom: 10px;
-      font-size: 2.5rem;
-      font-weight: 700;
-    }
-    
-    .subtitle {
-      color: #333;
-      margin-bottom: 30px;
-      font-size: 1.1rem;
-      font-weight: 400;
-    }
-    
-    p {
-      color: #333;
-      margin-bottom: 20px;
-      line-height: 1.8;
-      max-width: 900px;
-    }
-    
     .pdf-container {
-      margin: 30px 0;
       width: 100%;
-      height: auto;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #fff;
     }
     
     embed {
-      display: block;
       width: 100%;
-      height: auto;
-      min-height: 800px;
+      height: 100%;
       background-color: #fff;
-    }
-    
-    .pdf-info {
-      background-color: #fff;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.95rem;
-      color: #333;
-      margin-top: 20px;
     }
     
     .download-link {
-      display: inline-block;
+      position: fixed;
+      top: 20px;
+      right: 20px;
       padding: 12px 28px;
       background-color: #000;
       color: #fff;
@@ -96,58 +62,21 @@
       font-weight: 600;
       font-family: 'Akshar', sans-serif;
       border: 2px solid #000;
+      z-index: 100;
+      font-size: 0.95rem;
     }
     
     .download-link:hover {
       background-color: #fff;
       color: #000;
     }
-    
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      padding: 20px;
-      border-top: 1px solid #000;
-      color: #333;
-      font-size: 0.95rem;
-    }
-    
-    /* Scrollbar styling */
-    ::-webkit-scrollbar {
-      width: 10px;
-    }
-    
-    ::-webkit-scrollbar-track {
-      background: #fff;
-    }
-    
-    ::-webkit-scrollbar-thumb {
-      background: #000;
-      border-radius: 5px;
-    }
-    
-    ::-webkit-scrollbar-thumb:hover {
-      background: #333;
-    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Pankaj Jalluri</h1>
-    <p class="subtitle">Engineering Portfolio & Project Showcase</p>
-    
-    <p>Welcome to my professional engineering portfolio. Below you'll find my detailed resume, projects, and technical experience.</p>
-    
-    <div class="pdf-container">
-      <embed src="Pankaj Jalluri Engineering Portfolio.pdf" type="application/pdf">
-      <div class="pdf-info">
-        If the PDF doesn't display, <a href="Pankaj Jalluri Engineering Portfolio.pdf" class="download-link">download it here</a>
-      </div>
-    </div>
-    
-    <footer>
-      <p>&copy; 2026 Pankaj Jalluri. All rights reserved.</p>
-    </footer>
+  <div class="pdf-container">
+    <embed src="assets/portfolio.pdf" type="application/pdf">
   </div>
+  
+  <a href="assets/portfolio.pdf" download class="download-link">Download PDF</a>
 </body>
 </html>
